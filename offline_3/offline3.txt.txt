@@ -1,0 +1,28 @@
+You have a matrix consisting of m rows and n columns. Let a be the maximum element of the matrix and b be the smallest element of the matrix. If the value of any element is equal to a or b, it is called an unsafe element. All the elements in the row and column of an unsafe element are also unsafe. So it is evident that all the elements that are not unsafe should be safe. A matrix is safe if the sum of its safe elements is at least ½ of the sum of all its elements.
+
+For example, 
+
+8   7  3
+6   2  4
+12 1  5
+
+In this 3x3 matrix, 1 is the smallest element, so it is unsafe. Elements in its row (12, 5) are also unsafe. Elements in its column (7, 2) are also unsafe. Similarly, 12 is the largest element, so it is unsafe. Elements in its row (1, 5) are also unsafe. Elements in its column (8, 6) are also unsafe.
+
+So only two elements (3, 4) are safe. The sum of safe elements is 7.
+On the other hand, the sum of all the elements of the matrix is 48. 
+As the sum of the safe elements is less than 24 here, the matrix is unsafe.
+
+If the largest element is present multiple times in the matrix, all the elements present in all the rows and columns of all the instances of the largest element are unsafe. The same applies for the smallest element.
+
+For example, only one element (3) is a safe element in the following matrix.
+
+8    7    3
+6   12   4
+12  1    5
+
+There may not be any safe element in a matrix at all.
+
+Given a matrix as input, you have to print whether it is safe or unsafe. Here 1 <= m,n <= 10. 
+
+Deadline: 31 January 11 pm
+
